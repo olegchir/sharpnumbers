@@ -2,7 +2,7 @@ import * as express from 'express';
 import main from './Main';
 import * as url from 'url';
 
-class App {
+class ExpressApp {
   public express
 
   constructor () {
@@ -22,4 +22,4 @@ class App {
   }
 }
 
-export default new App().express
+export default new ExpressApp().express
