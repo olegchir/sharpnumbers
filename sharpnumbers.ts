@@ -1,3 +1,4 @@
-import { start as expressStart } from './express-starter';
+// import { start } from './express-starter';
+import { start } from './electron-starter';
 
-expressStart();
+start();

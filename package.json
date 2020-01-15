@@ -4,7 +4,8 @@
   "description": "",
   "main": "dist/sharpnumbers.js",
   "scripts": {
-    "start": "tsc && node dist/sharpnumbers.js",
+    "start": "node dist/sharpnumbers.js",
+    "buildstart": "tsc && node dist/sharpnumbers.js",
     "build": "tsc",
     "watch": "tsc --watch",
     "daemon": "nodemon ./dist/sharpnumbers.js localhost 3000",
@@ -16,10 +17,11 @@
   "license": "UPL-1.0",
   "dependencies": {
     "@types/express": "^4.17.2",
-    "@types/node": "^13.1.6",
+    "@types/node": "^12.12.6",
     "express": "^4.17.1"
   },
   "devDependencies": {
+    "@types/node": "^12.12.6",
     "electron": "^7.1.9"
   }
 }
