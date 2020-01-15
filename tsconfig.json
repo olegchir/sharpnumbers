@@ -7,15 +7,19 @@
       "sourceMap": true,
       "moduleResolution": "Node",
       "allowJs": true,      
-      // "lib": [
-      //   "esnext",
-      //   "dom"
-      // ]
+      "lib": [
+        "esnext",
+        "dom"
+      ],
       "emitDecoratorMetadata": true,
       "experimentalDecorators": true,
       "importHelpers": true,
       "noImplicitAny": true,
       "suppressImplicitAnyIndexErrors": true,
+      "typeRoots": [
+        "node_modules/@types"
+      ],
+      "baseUrl": "./",
     },  
     // "files": [
     //   "./node_modules/@types/node/index.d.ts"
