@@ -11,7 +11,8 @@
     "daemon": "nodemon ./dist/sharpnumbers.js localhost 3000",
     "daemon-test": "nodemon ./dist/sharpnumbers-test.js",
     "inspect": "node --inspect ./dist/sharpnumbers.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node ./dist/sharpnumbers-test.js",
+    "alive": "echo \"Still alive!\" && exit 1"
   },
   "author": "Oleg Chirukhin",
   "license": "UPL-1.0",

@@ -11,12 +11,17 @@
       //   "esnext",
       //   "dom"
       // ]
+      "emitDecoratorMetadata": true,
+      "experimentalDecorators": true,
+      "importHelpers": true,
+      "noImplicitAny": true,
+      "suppressImplicitAnyIndexErrors": true,
     },  
     // "files": [
     //   "./node_modules/@types/node/index.d.ts"
     // ],
     "include": [
-      "./**/*.ts"
+      "./src/**/*.ts"
     ],
     "exclude": [
       "node_modules"

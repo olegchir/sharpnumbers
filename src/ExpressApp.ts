@@ -3,7 +3,7 @@ import main from './Main';
 import * as url from 'url';
 
 class ExpressApp {
-  public express
+  public express:any
 
   constructor () {
     this.express = express()

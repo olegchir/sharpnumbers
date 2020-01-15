@@ -6,8 +6,8 @@ import * as url from 'url';
 import * as path from 'path';
 
 export class ElectronApp {
-  public mainWindow
-  public app
+  public mainWindow:BrowserWindow
+  public app:Electron.App
 
   constructor () {
     this.app = app

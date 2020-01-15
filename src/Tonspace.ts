@@ -328,7 +328,7 @@ export class Tonality {
 
     // Ветка алгоритма про мажорные диезы
     public majorSharpAccidentals(): AccidentalSet {
-        const result = [];
+        const result:PitchSpace[] = [];
 
         // В диезных тональностях последний диез - на ноту ниже, чем тоника
         // (Диез - это не ступень сама по себе, а команда повышать какую-то ступень
@@ -343,7 +343,7 @@ export class Tonality {
         // Собираем все диезы вплоть до "последнего", включая его самого
         for (let i=0; i < sharpz.length; i++) {
             let currSharp = sharpz[i];
-            result.push(currSharp);            
+            result.push(PitchSpace[Sharps[currSharp]]);            
             if (currSharp == lastSharpValue) {
                 break;
             }
@@ -354,11 +354,11 @@ export class Tonality {
 
     // Ветка алгоритма про мажорные бемоли
     public majorFlatAccidentals(): AccidentalSet {
-        const result = [];
+        const result:PitchSpace[] = [];
     
         // Фа-мажор - это исключение, в котором есть всего один бемоль
-        if ( (this.tonic.tone == Tone.F && this.tonic.accidental == Accidental.NATURAL && this.mode == SMode.MAJOR) ) {
-            result.push(Flats.B);
+        if ( (this.tonic.tone == Tone.F && this.tonic.accidental == Accidental.NATURAL && this.mode == SMode.MAJOR) ) {            
+            result.push(PitchSpace[Flats[Flats.B]]);
             return new AccidentalSet(result, SKey.FLAT);
         }
 
@@ -373,7 +373,7 @@ export class Tonality {
         let nextPassWillBeLast: boolean = false;
         for (let i=0; i < flatz.length; i++) {
             let currFlat = flatz[i];
-            result.push(currFlat);            
+            result.push(PitchSpace[Flats[currFlat]]);            
             if (nextPassWillBeLast) {
                 break;
             }

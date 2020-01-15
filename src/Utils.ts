@@ -1,7 +1,7 @@
 export interface Chain {
-    next(), 
-    prev(), 
-    skip(stops: number, forward: boolean)
+    next():any, 
+    prev():any, 
+    skip(stops: number, forward: boolean):any
 }
 
 export class Chains {
