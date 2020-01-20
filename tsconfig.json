@@ -3,7 +3,7 @@
     "compilerOptions": {
       "target": "ESNext",
       "module": "commonjs",
-      "outDir": "./dist/out-tsc",
+      "outDir": "./dist/build",
       "sourceMap": true,
       "moduleResolution": "Node",
       "allowJs": true,

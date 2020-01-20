@@ -25,7 +25,7 @@ export class ElectronApp {
 
     this.mainWindow.loadURL(
       url.format({
-        pathname: path.join(__dirname, `../../sharpnumbers/index.html`),
+        pathname: path.join(__dirname, `../static/index.html`),
         protocol: "file:",
         slashes: true
       })
