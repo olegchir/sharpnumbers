@@ -16,6 +16,7 @@
     "ng": "ng",
     "ngstart": "ng serve",
     "ngbuild": "ng build",
+    "ngwatch": "ng build --watch",
     "ngtest": "ng test",
     "nglint": "ng lint",
     "nge2e": "ng e2e",

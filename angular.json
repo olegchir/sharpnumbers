@@ -18,7 +18,20 @@
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
-            "aot": false,
+
+            "optimization": false,
+            "outputHashing": "none",
+            "sourceMap": false,
+            "extractCss": true,
+            "namedChunks": false,
+            "showCircularDependencies": false,
+            "aot": true,
+            "extractLicenses": false,
+            "statsJson": false,
+            "progress": false,
+            "vendorChunk": true,
+            "buildOptimizer": false,
+
             "assets": [
               "src/favicon.ico",
               "src/assets"
