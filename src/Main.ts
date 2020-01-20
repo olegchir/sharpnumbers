@@ -1,17 +1,12 @@
-import * as t from './Tonspace';
+import { enableProdMode } from '@angular/core';
+import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 
-// Код запуска
+import { AppModule } from './app/app.module';
+import { environment } from './environments/environment';
 
-class Main {
-    public main(query: any): any {
-        let tonality = new t.Tonality(new t.Note(t.Tone.A, t.Accidental.FLAT), t.SMode.MINOR);
-        let accidentals = tonality.accidentals();
-        return {    
-            // result: this.note(),              
-            result: accidentals ? accidentals.prettyJSON() : "UNDEFINED",
-            tonality: tonality
-        };
-    }
+if (environment.production) {
+  enableProdMode();
 }
 
-export default new Main()
+platformBrowserDynamic().bootstrapModule(AppModule)
+  .catch(err => console.error(err));

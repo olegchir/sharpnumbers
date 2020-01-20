@@ -1,5 +1,4 @@
 import * as express from 'express';
-import main from './Main';
 import * as url from 'url';
 
 class ExpressApp {
@@ -16,7 +15,7 @@ class ExpressApp {
       var url_parts = url.parse(req.url, true);
       var query = url_parts.query;      
       res.set('Content-Type', 'application/json');
-      res.json(main.main(query));      
+      res.json({});      
     })
     this.express.use('/', router)
   }

@@ -1,11 +1,12 @@
 {
-    "compilerOptions": {            
+    "compileOnSave": false,
+    "compilerOptions": {
       "target": "ESNext",
       "module": "commonjs",
-      "outDir": "./dist",
+      "outDir": "./dist/out-tsc",
       "sourceMap": true,
       "moduleResolution": "Node",
-      "allowJs": true,      
+      "allowJs": true,
       "lib": [
         "esnext",
         "dom"
@@ -21,14 +22,19 @@
         "node_modules/@types"
       ],
       "baseUrl": "./",
-    },  
+    },
     // "files": [
     //   "./node_modules/@types/node/index.d.ts"
     // ],
+    "angularCompilerOptions": {
+      "fullTemplateTypeCheck": true,
+      "strictInjectionParameters": true,
+      "disableTypeScriptVersionCheck": true
+    },
     "include": [
-      "./src/**/*.ts"
+      "src/**/*.ts"
     ],
     "exclude": [
       "node_modules"
-    ]
+    ],
   }
